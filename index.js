@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Smooth scrolling for navigation links
     document.querySelectorAll('nav ul li a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -8,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    // Fade-in animation on scroll
     const sections = document.querySelectorAll('section');
     const options = {
         threshold: 0.1
