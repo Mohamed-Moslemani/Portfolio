@@ -212,3 +212,28 @@ section {
     transform: translateY(20px);
     transition: all 0.5s ease-out;
 }
+
+/* Main Skills List */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.skills-list li {
+    background: #6090b0;
+    color: #fff;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.skills-list li:hover {
+    background: #4cafec;
+    transform: translateY(-3px);
+}
