@@ -1,0 +1,182 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background: #f0f0f0;
+    display: flex;
+}
+
+/* Sidebar Styling */
+header {
+    background: #005f99;
+    color: #fff;
+    padding: 2rem 1rem;
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 1rem 0;
+    width: 100%;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+    border-radius: 25px;
+    transition: background 0.3s ease, color 0.3s ease;
+    background: #007acc;
+}
+
+header nav ul li a:hover {
+    background: #003f66;
+    color: #fff;
+}
+
+/* Main Content Styling */
+main {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 2rem;
+}
+
+/* Section Styling */
+section {
+    padding: 4rem 2rem 2rem;
+    min-height: 100vh;
+    background: #fff;
+}
+
+section:nth-child(even) {
+    background: #eaeaea;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #005f99;
+}
+
+/* Home Section */
+#home {
+    background: #007acc;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 1rem 0;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#home p {
+    font-size: 1.5rem;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #f0f8ff;
+}
+
+#about p {
+    max-width: 800px;
+    margin-bottom: 1rem;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    background: #eaeaea;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form input,
+#contact form textarea {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    width: 80%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact form button {
+    background: #005f99;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#contact form button:hover {
+    background: #007acc;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+}

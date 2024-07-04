@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Moslemani's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#volunteer">Volunteer Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Mohamed Moslemani, a Data Scientist and Researcher.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Data Scientist | Researcher</p>
+            <p>+961 71813680 | mohamad.meselmany@hotmail.com | <a href="https://www.linkedin.com/in/mohamed-moslemani/">LinkedIn</a> | <a href="https://github.com/mohamedmoslemani">GitHub</a> | <a href="https://www.kaggle.com/msl3122">Kaggle</a></p>
+            <h3>Skillset</h3>
+            <p>Data science, machine learning, deep neural networks, computer vision, natural language processing, Keras, TensorFlow, Apache spark, Linux, Docker, Git, Model creation and evaluation, advanced machine learning algorithms, model deployment, Python programming language, R programming language, C++ for object-oriented programming and DSA, Power BI, Tableau, advanced methods of data analysis, mathematical modeling.</p>
+        </section>
+
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="submit_form.php" method="post">
+                <input type="text" name="first_name" placeholder="First Name" required>
+                <input type="text" name="last_name" placeholder="Last Name" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
