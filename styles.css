@@ -237,3 +237,117 @@ section {
     background: #4cafec;
     transform: translateY(-3px);
 }
+
+/* About Section */
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #f0f8ff;
+    padding: 2rem 1rem;
+}
+
+#about h2 {
+    margin-bottom: 1rem;
+    color: #005f99;
+}
+
+#about .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#about .info p {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    color: #005f99;
+}
+
+#about .info p svg {
+    margin-right: 0.5rem;
+    fill: #007acc;
+}
+
+#about .links a {
+    display: flex;
+    align-items: center;
+    color: #007acc;
+    text-decoration: none;
+    margin: 0.5rem;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+#about .links a:hover {
+    color: #005f99;
+}
+
+#about .links a svg {
+    margin-right: 0.5rem;
+    fill: currentColor;
+}
+
+/* Main Skills List */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.skills-list li {
+    background: #007acc;
+    color: #fff;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.skills-list li:hover {
+    background: #005f99;
+    transform: translateY(-3px);
+}
+
+/* Contact Info Styling */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.contact-info a {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    text-decoration: none;
+    color: #005f99;
+    padding: 0.5rem 1rem;
+    border: 1px solid #005f99;
+    border-radius: 25px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-info a:hover {
+    background: #007acc;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.contact-info a svg {
+    margin-right: 0.5rem;
+    fill: currentColor;
+}
+
+.contact-info a span {
+    font-size: 1rem;
+}
