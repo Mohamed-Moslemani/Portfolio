@@ -259,3 +259,30 @@ form button:hover {
     background: linear-gradient(to bottom right, #363e4c 50%, #1f2937 50%);
     height: 100vh;
 }
+
+/* Tailwind CSS covers most styling needs, but custom styles can be added here */
+
+/* Highlight Box Animation */
+@keyframes highlight {
+    0%, 100% {
+        border-color: transparent;
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.5);
+    }
+    50% {
+        border-color: rgba(59, 130, 246, 0.5);
+        box-shadow: 0 0 10px 5px rgba(59, 130, 246, 0.5);
+    }
+}
+
+.highlight-box {
+    border: 2px solid rgba(59, 130, 246, 0.5);
+    border-radius: 12px;
+    padding: 2rem;
+    animation: highlight 2s infinite;
+}
+
+/* Split Background */
+.split-bg {
+    background: linear-gradient(to bottom right, #3b82f6 50%, #1f2937 50%);
+    height: 100vh;
+}

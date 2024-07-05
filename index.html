@@ -11,14 +11,14 @@
     <header>
         <nav class="fixed top-0 left-0 h-full w-64 bg-gray-800 shadow-lg z-10">
             <ul class="flex flex-col items-start mt-10 space-y-2">
-                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#home">Home</a></li>
-                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#about">About</a></li>
-                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#education">Education</a></li>
-                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#experience">Experience</a></li>
-                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#projects">Projects</a></li>
-                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#certifications">Certifications</a></li>
-                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#volunteer">Volunteer Work</a></li>
-                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#contact">Contact</a></li>
+                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#home" class="text-white">Home</a></li>
+                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#about" class="text-white">About</a></li>
+                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#education" class="text-white">Education</a></li>
+                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#experience" class="text-white">Experience</a></li>
+                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#projects" class="text-white">Projects</a></li>
+                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#certifications" class="text-white">Certifications</a></li>
+                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#volunteer" class="text-white">Volunteer Work</a></li>
+                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#contact" class="text-white">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -32,15 +32,17 @@
             </div>
         </div>
 
-        <section id="contact" class="p-8 bg-gray-800">
-            <h2 class="text-4xl font-bold mb-4">Contact</h2>
-            <form action="submit_form.php" method="post" class="max-w-lg mx-auto">
-                <input type="text" name="first_name" placeholder="First Name" required class="w-full p-2 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <input type="text" name="last_name" placeholder="Last Name" required class="w-full p-2 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <input type="tel" name="phone" placeholder="Phone Number" required class="w-full p-2 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <input type="email" name="email" placeholder="Email" required class="w-full p-2 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <textarea name="message" placeholder="Message" rows="4" required class="w-full p-2 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                <button type="submit" class="w-full py-2 bg-blue-500 hover:bg-blue-700 rounded transition">Send</button>
+        <section id="contact" class="p-8 bg-gray-900 text-white">
+            <h2 class="text-4xl font-bold mb-8 text-center">Contact</h2>
+            <form action="submit_form.php" method="post" class="max-w-2xl mx-auto bg-gray-800 p-8 rounded-lg shadow-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <input type="text" name="first_name" placeholder="First Name" required class="w-full p-4 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="text" name="last_name" placeholder="Last Name" required class="w-full p-4 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <input type="tel" name="phone" placeholder="Phone Number" required class="w-full p-4 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <input type="email" name="email" placeholder="Email" required class="w-full p-4 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <textarea name="message" placeholder="Message" rows="4" required class="w-full p-4 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                <button type="submit" class="w-full py-4 bg-blue-500 hover:bg-blue-700 rounded-lg text-white font-bold text-xl transition">Send</button>
             </form>
             <div class="flex justify-center mt-8 space-x-4">
                 <a href="tel:+96171813680"><img src="https://www.svgrepo.com/show/475692/whatsapp-color.svg" alt="phone" width="25"></a>
