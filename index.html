@@ -4,52 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohamed Moslemani's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="bg-gray-900 text-white font-sans">
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#volunteer">Volunteer Work</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav class="fixed top-0 left-0 h-full w-64 bg-gray-800 shadow-lg z-10">
+            <ul class="flex flex-col items-start mt-10 space-y-2">
+                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#home">Home</a></li>
+                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#about">About</a></li>
+                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#education">Education</a></li>
+                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#experience">Experience</a></li>
+                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#projects">Projects</a></li>
+                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#certifications">Certifications</a></li>
+                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#volunteer">Volunteer Work</a></li>
+                <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="home">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Hi, I'm Mohamed Moslemani, a Data Scientist and Researcher.</p>
+    <main class="ml-64">
+        <section id="home" class="flex flex-col items-center justify-center h-screen text-center">
+            <div class="highlight-box p-8">
+                <h1 class="text-5xl font-bold mb-4">HELLO WORLD</h1>
+                <h2 class="text-4xl mb-4">I'M MOHAMED MOSLEMANI</h2>
+                <h3 class="text-3xl">DATA SCIENTIST AND RESEARCHER</h3>
+            </div>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
+        <section id="about" class="p-8">
+            <h2 class="text-4xl font-bold mb-4">About Me</h2>
             <p>Data Scientist | Researcher</p>
-            <div class="contact-info">
-                <a href="tel:+96171813680">
-                    <img src="https://www.svgrepo.com/show/475692/whatsapp-color.svg" alt="phone" width="25">
-                </a>
-                <a href="mailto:mohamad.meselmany@hotmail.com">
-                    <img src="https://www.svgrepo.com/show/484995/email-part-2.svg" alt="email" width="25">
-                </a>
-                <a href="https://www.linkedin.com/in/mohamed-moslemani/" target="_blank">
-                    <img src="https://www.svgrepo.com/show/448234/linkedin.svg" alt="LinkedIn" width="25">
-                </a>
-                <a href="https://github.com/mohamedmoslemani" target="_blank">
-                    <img src="https://www.svgrepo.com/show/512317/github-142.svg" alt="GitHub" width="25">
-                </a>
-                <a href="https://www.kaggle.com/msl3122" target="_blank">
-                    <img src="https://www.vectorlogo.zone/logos/kaggle/kaggle-icon.svg" alt="Kaggle" width="25">
-                </a>
+            <div class="flex space-x-4 mt-4">
+                <a href="tel:+96171813680"><img src="https://www.svgrepo.com/show/475692/whatsapp-color.svg" alt="phone" width="25"></a>
+                <a href="mailto:mohamad.meselmany@hotmail.com"><img src="https://www.svgrepo.com/show/484995/email-part-2.svg" alt="email" width="25"></a>
+                <a href="https://www.linkedin.com/in/mohamed-moslemani/" target="_blank"><img src="https://www.svgrepo.com/show/448234/linkedin.svg" alt="LinkedIn" width="25"></a>
+                <a href="https://github.com/mohamedmoslemani" target="_blank"><img src="https://www.svgrepo.com/show/512317/github-142.svg" alt="GitHub" width="25"></a>
+                <a href="https://www.kaggle.com/msl3122" target="_blank"><img src="https://www.vectorlogo.zone/logos/kaggle/kaggle-icon.svg" alt="Kaggle" width="25"></a>
             </div>
-            <h3>Skillset</h3>
-            <ul class="skills-list">
+            <h3 class="text-3xl font-bold mt-8">Skillset</h3>
+            <ul class="list-disc ml-8 mt-4 space-y-2">
                 <li>Data Science</li>
                 <li>Machine Learning</li>
                 <li>Deep Neural Networks</li>
@@ -63,21 +57,24 @@
             </ul>
         </section>
 
-        <!-- Other sections here -->
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <form action="submit_form.php" method="post">
-                <input type="text" name="first_name" placeholder="First Name" required>
-                <input type="text" name="last_name" placeholder="Last Name" required>
-                <input type="tel" name="phone" placeholder="Phone Number" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="message" placeholder="Message" rows="4" required></textarea>
-                <button type="submit">Send</button>
+        <section id="contact" class="p-8 bg-gray-800 mt-8">
+            <h2 class="text-4xl font-bold mb-4">Contact</h2>
+            <form action="submit_form.php" method="post" class="max-w-lg mx-auto">
+                <input type="text" name="first_name" placeholder="First Name" required class="w-full p-2 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <input type="text" name="last_name" placeholder="Last Name" required class="w-full p-2 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <input type="tel" name="phone" placeholder="Phone Number" required class="w-full p-2 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <input type="email" name="email" placeholder="Email" required class="w-full p-2 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <textarea name="message" placeholder="Message" rows="4" required class="w-full p-2 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                <button type="submit" class="w-full py-2 bg-blue-500 hover:bg-blue-700 rounded transition">Send</button>
             </form>
+            <div class="flex justify-center mt-8 space-x-4">
+                <a href="tel:+96171813680"><img src="https://www.svgrepo.com/show/475692/whatsapp-color.svg" alt="phone" width="25"></a>
+                <a href="mailto:mohamad.meselmany@hotmail.com"><img src="https://www.svgrepo.com/show/484995/email-part-2.svg" alt="email" width="25"></a>
+                <a href="https://www.linkedin.com/in/mohamed-moslemani/" target="_blank"><img src="https://www.svgrepo.com/show/448234/linkedin.svg" alt="LinkedIn" width="25"></a>
+                <a href="https://github.com/mohamedmoslemani" target="_blank"><img src="https://www.svgrepo.com/show/512317/github-142.svg" alt="GitHub" width="25"></a>
+                <a href="https://www.kaggle.com/msl3122" target="_blank"><img src="https://www.vectorlogo.zone/logos/kaggle/kaggle-icon.svg" alt="Kaggle" width="25"></a>
+            </div>
         </section>
     </main>
-
-    <script src="index.js"></script>
 </body>
 </html>
