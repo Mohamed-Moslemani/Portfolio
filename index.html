@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-900 text-white font-sans">
+<body class="font-sans">
     <header>
         <nav class="fixed top-0 left-0 h-full w-64 bg-gray-800 shadow-lg z-10">
             <ul class="flex flex-col items-start mt-10 space-y-2">
@@ -23,41 +23,16 @@
         </nav>
     </header>
 
-    <main class="ml-64">
-        <section id="home" class="flex flex-col items-center justify-center h-screen text-center">
+    <main class="ml-64 relative">
+        <div class="split-bg h-screen flex items-center justify-center text-center">
             <div class="highlight-box p-8">
                 <h1 class="text-5xl font-bold mb-4">HELLO WORLD</h1>
                 <h2 class="text-4xl mb-4">I'M MOHAMED MOSLEMANI</h2>
                 <h3 class="text-3xl">DATA SCIENTIST AND RESEARCHER</h3>
             </div>
-        </section>
+        </div>
 
-        <section id="about" class="p-8">
-            <h2 class="text-4xl font-bold mb-4">About Me</h2>
-            <p>Data Scientist | Researcher</p>
-            <div class="flex space-x-4 mt-4">
-                <a href="tel:+96171813680"><img src="https://www.svgrepo.com/show/475692/whatsapp-color.svg" alt="phone" width="25"></a>
-                <a href="mailto:mohamad.meselmany@hotmail.com"><img src="https://www.svgrepo.com/show/484995/email-part-2.svg" alt="email" width="25"></a>
-                <a href="https://www.linkedin.com/in/mohamed-moslemani/" target="_blank"><img src="https://www.svgrepo.com/show/448234/linkedin.svg" alt="LinkedIn" width="25"></a>
-                <a href="https://github.com/mohamedmoslemani" target="_blank"><img src="https://www.svgrepo.com/show/512317/github-142.svg" alt="GitHub" width="25"></a>
-                <a href="https://www.kaggle.com/msl3122" target="_blank"><img src="https://www.vectorlogo.zone/logos/kaggle/kaggle-icon.svg" alt="Kaggle" width="25"></a>
-            </div>
-            <h3 class="text-3xl font-bold mt-8">Skillset</h3>
-            <ul class="list-disc ml-8 mt-4 space-y-2">
-                <li>Data Science</li>
-                <li>Machine Learning</li>
-                <li>Deep Neural Networks</li>
-                <li>Computer Vision</li>
-                <li>Natural Language Processing</li>
-                <li>Keras</li>
-                <li>TensorFlow</li>
-                <li>Python Programming</li>
-                <li>Model Deployment</li>
-                <li>Data Analysis</li>
-            </ul>
-        </section>
-
-        <section id="contact" class="p-8 bg-gray-800 mt-8">
+        <section id="contact" class="p-8 bg-gray-800">
             <h2 class="text-4xl font-bold mb-4">Contact</h2>
             <form action="submit_form.php" method="post" class="max-w-lg mx-auto">
                 <input type="text" name="first_name" placeholder="First Name" required class="w-full p-2 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
