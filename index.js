@@ -21,23 +21,48 @@ document.addEventListener('DOMContentLoaded', function() {
         "Mohamed_Moslemani_Robotic_Version > print(\"Good Bye Humans, Hello world\")"
     ];
 
+    const images = document.querySelectorAll('.typing-image');
+    images.forEach(image => {
+        image.style.visibility = 'hidden';
+    });
+
     new Typed('#line1', {
         strings: [lines[0]],
         typeSpeed: 50,
         showCursor: false,
+        onStart: () => {
+            document.querySelector('#line1-image').style.visibility = 'visible';
+        },
         onComplete: () => {
+            document.querySelector('#line1-image').style.visibility = 'hidden';
             new Typed('#line2', {
                 strings: [lines[1]],
                 typeSpeed: 50,
                 showCursor: false,
+                onStart: () => {
+                    document.querySelector('#line2-image').style.visibility = 'visible';
+                },
                 onComplete: () => {
+                    document.querySelector('#line2-image').style.visibility = 'hidden';
                     new Typed('#line3', {
                         strings: [lines[2]],
                         typeSpeed: 50,
-                        showCursor: true
+                        showCursor: true,
+                        onStart: () => {
+                            document.querySelector('#line3-image').style.visibility = 'visible';
+                        },
+                        onComplete: () => {
+                            document.querySelector('#line3-image').style.visibility = 'hidden';
+                        }
                     });
                 }
             });
         }
+    });
+
+    const closeIcon = document.querySelector('#close-icon');
+    closeIcon.addEventListener('click', () => {
+        const commandLineBox = closeIcon.closest('.command-line-box');
+        commandLineBox.style.display = 'none';
     });
 });
