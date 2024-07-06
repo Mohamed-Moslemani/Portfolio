@@ -223,9 +223,7 @@ form button:hover {
     color: #00ff00;
 }
 
-/* Tailwind CSS covers most styling needs, but custom styles can be added here */
 
-/* Split Background */
 .split-bg {
     background: linear-gradient(to bottom right, #3b82f6 50%, #1f2937 50%);
     height: 100vh;
@@ -246,4 +244,39 @@ form button:hover {
     font-family: 'Courier New', Courier, monospace;
     color: #00ff00;
     font-size: 1.25rem;
+}
+
+.split-bg {
+    background-color: #f0f0f0; /* Example background color */
+}
+.text-white {
+    color: white; /* Example text color */
+}
+.bg-gray-800 {
+    background-color: #333; /* Example background color */
+}
+.rounded-lg {
+    border-radius: 8px; /* Example border radius */
+}
+.shadow-lg {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Example shadow */
+}
+.command-line-box {
+    max-width: 80%; 
+    margin: 0 auto; 
+}
+.font-mono {
+    font-family: 'Courier New', Courier, monospace; 
+}
+.h-screen {
+    height: 100vh; 
+}
+.items-center {
+    align-items: center; 
+}
+.justify-center {
+    justify-content: center; 
+}
+.text-left {
+    text-align: left; 
 }
