@@ -286,3 +286,11 @@ form button:hover {
     background: linear-gradient(to bottom right, #3b82f6 50%, #1f2937 50%);
     height: 100vh;
 }
+
+/* Tailwind CSS covers most styling needs, but custom styles can be added here */
+
+/* Split Background */
+.split-bg {
+    background: linear-gradient(to bottom right, #3b82f6 50%, #1f2937 50%);
+    height: 100vh;
+}
