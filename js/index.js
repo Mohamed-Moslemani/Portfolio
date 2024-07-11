@@ -1,15 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('nav ul li');
-    navLinks.forEach((link, index) => {
-        link.style.setProperty('--i', index + 1);
-    });
+    console.log("DOM fully loaded and parsed");
 
     const nav = document.querySelector('nav');
     nav.addEventListener('mouseover', () => {
         nav.style.width = '210px';
         document.querySelector('main').style.marginLeft = '300px';
     });
-
     nav.addEventListener('mouseout', () => {
         nav.style.width = '200px';
         document.querySelector('main').style.marginLeft = '200px';
@@ -21,48 +17,29 @@ document.addEventListener('DOMContentLoaded', function() {
         "Mohamed_Moslemani_Robotic_Version > print(\"Good Bye Humans, Hello world\")"
     ];
 
-    const images = document.querySelectorAll('.typing-image');
-    images.forEach(image => {
-        image.style.visibility = 'hidden';
-    });
+    function typeSequence(currentIndex) {
+        if (currentIndex >= lines.length) return; // Stop if no more lines
 
-    function startTyping() {
-        new Typed('#line1', {
-            strings: [lines[0]],
+        const lineId = `#line${currentIndex + 1}`;
+        const imageId = `${lineId}-image`;
+
+        new Typed(lineId, {
+            strings: [lines[currentIndex]],
             typeSpeed: 50,
-            showCursor: false,
+            showCursor: currentIndex === lines.length - 1, // Show cursor only on last line
             onStart: () => {
-                document.querySelector('#line1-image').style.visibility = 'visible';
+                document.querySelector(imageId).style.visibility = 'visible';
+                console.log(`Starting line ${currentIndex + 1}`);
             },
             onComplete: () => {
-                document.querySelector('#line1-image').style.visibility = 'hidden';
-                new Typed('#line2', {
-                    strings: [lines[1]],
-                    typeSpeed: 50,
-                    showCursor: false,
-                    onStart: () => {
-                        document.querySelector('#line2-image').style.visibility = 'visible';
-                    },
-                    onComplete: () => {
-                        document.querySelector('#line2-image').style.visibility = 'hidden';
-                        new Typed('#line3', {
-                            strings: [lines[2]],
-                            typeSpeed: 50,
-                            showCursor: true,
-                            onStart: () => {
-                                document.querySelector('#line3-image').style.visibility = 'visible';
-                            },
-                            onComplete: () => {
-                                document.querySelector('#line3-image').style.visibility = 'hidden';
-                            }
-                        });
-                    }
-                });
+                document.querySelector(imageId).style.visibility = 'hidden';
+                console.log(`Completed line ${currentIndex + 1}`);
+                typeSequence(currentIndex + 1); // Start next line
             }
         });
     }
 
-    startTyping();
+    typeSequence(0);
 
     const closeIcon = document.querySelector('#close-icon');
     closeIcon.addEventListener('click', () => {
