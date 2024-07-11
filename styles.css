@@ -100,6 +100,20 @@ main {
     font-size: 2em;
 }
 
+nav {
+    width: 200px;
+    transition: width 0.5s;
+}
+
+nav ul li {
+    transition: color 0.3s ease;
+}
+
+main {
+    transition: margin-left 0.5s;
+}
+
+
 @keyframes fadeIn {
     from {
         opacity: 0;
