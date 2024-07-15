@@ -307,10 +307,3 @@ main.ml-64 {
     background-position: center; 
 }
 
-h2 > .p-8 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-}
