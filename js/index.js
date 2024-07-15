@@ -20,23 +20,18 @@ document.addEventListener('DOMContentLoaded', function() {
     function typeSequence(currentIndex) {
         if (currentIndex >= lines.length) return; // Stop if no more lines
 
-        const lineId = `#line${currentIndex + 1}`;
-        const imageId = `${lineId}-image`;
-
-        new Typed(lineId, {
+        const lineId = `line${currentIndex + 1}`;
+        const typedOptions = {
             strings: [lines[currentIndex]],
             typeSpeed: 50,
             showCursor: currentIndex === lines.length - 1, // Show cursor only on last line
-            onStart: () => {
-                document.querySelector(imageId).style.visibility = 'visible';
-                console.log(`Starting line ${currentIndex + 1}`);
-            },
             onComplete: () => {
-                document.querySelector(imageId).style.visibility = 'hidden';
                 console.log(`Completed line ${currentIndex + 1}`);
                 typeSequence(currentIndex + 1); // Start next line
             }
-        });
+        };
+
+        new Typed(`#${lineId}`, typedOptions);
     }
 
     typeSequence(0);

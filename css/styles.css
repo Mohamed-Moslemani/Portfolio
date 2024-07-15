@@ -290,3 +290,7 @@ form button:hover {
     cursor: pointer;
 }
 
+body
+{
+    font-size: 0.75;
+}
