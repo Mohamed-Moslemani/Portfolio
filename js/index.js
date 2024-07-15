@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const nav = document.querySelector('nav');
     nav.addEventListener('mouseover', () => {
         nav.style.width = '210px';
-        document.querySelector('main').style.marginLeft = '300px';
+        document.querySelector('main').style.marginLeft = '100px';
     });
     nav.addEventListener('mouseout', () => {
         nav.style.width = '200px';
-        document.querySelector('main').style.marginLeft = '200px';
+        document.querySelector('main').style.marginLeft = '0px';
     });
 
     const lines = [

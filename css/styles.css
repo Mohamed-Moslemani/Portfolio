@@ -34,7 +34,7 @@ nav ul {
     align-items: flex-start;
 }
 nav {
-    background: #005f99;
+    background: #667681;
 }
 nav ul li {
     width: 100%;
@@ -55,13 +55,13 @@ nav ul li a {
     width: 100%;
     padding: 10px 20px;
     display: block;
-    color: #fff;
+    color: #3d3636;
     text-decoration: none;
     transition: background 0.3s ease, padding-left 0.3s ease;
 }
 
 nav ul li a:hover {
-    background: #005f99;
+    background: #889196;
     padding-left: 30px;
 }
 
@@ -135,15 +135,6 @@ main {
     transform: translateY(-3px);
 }
 
-form {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    animation: formFadeIn 0.5s ease;
-}
 
 @keyframes formFadeIn {
     from {
@@ -181,17 +172,17 @@ form textarea:focus {
 form button {
     width: 100%;
     padding: 10px;
-    background: #007acc;
+    background-color: #1e2429;
     border: none;
     border-radius: 5px;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
+    transition: background 0.3s ease, transform 1s ease;
 }
 
 form button:hover {
-    background: #005f99;
+    background: #c0c8cd;
     transform: translateY(-2px);
 }
 
@@ -203,15 +194,6 @@ form button:hover {
 }
 
 
-.command-line-box {
-    background-color: rgba(45,45,45,0.2);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    font-family: 'Courier New', Courier, monospace;
-    color: #00ff00;
-}
-
 .command-line-box p {
     margin: 10px 0;
     font-family: 'Courier New', Courier, monospace;
@@ -221,18 +203,16 @@ form button:hover {
 .text-white {
     color: white; 
 }
-.bg-gray-800 {
-    background-color: #333;
-}
 .rounded-lg {
     border-radius: 8px; 
 }
 .shadow-lg {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px rgba(121, 120, 120, 0.1); 
 }
 .command-line-box {
     max-width: 80%; 
-    margin: 0 auto; 
+    margin: 0 auto;
+    padding-left: 300px; 
 }
 .font-mono {
     font-family: 'Courier New', Courier, monospace; 
@@ -286,9 +266,8 @@ body
 
 .command-line-box {
     position: relative;
-    z-index: 1; /* Ensures the command line box is above the video */
+    z-index: 1; 
 }
-/* Add styles for the video background */
 .video-bg {
     position: relative;
     overflow: hidden;
@@ -308,4 +287,30 @@ body
 .command-line-box {
     position: relative;
     z-index: 1; 
+}
+
+.command-line-box {
+    position: relative;
+    z-index: 1; 
+    background-color: rgba(45, 45, 45, 0.6); 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    font-family: 'Courier New', Courier, monospace;
+    color: #29a429;
+}
+
+
+main.ml-64 {
+    background-image: url('../hdwallpaper.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+}
+
+h2 > .p-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
