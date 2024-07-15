@@ -195,23 +195,6 @@ form button:hover {
     transform: translateY(-2px);
 }
 
-.split-bg {
-    background: linear-gradient(to bottom right, #3b82f6 50%, #1f2937 50%);
-    height: 100vh;
-}
-
-
-.split-bg {
-    background: linear-gradient(to bottom right, #3b82f6 50%, #1f2937 50%);
-    height: 100vh;
-}
-
-.command-line-box {
-    background-color: #2d2d2d;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
 
 .command-line-box h1, .command-line-box h2, .command-line-box h3 {
     margin: 10px 0;
@@ -220,13 +203,8 @@ form button:hover {
 }
 
 
-.split-bg {
-    background: linear-gradient(to bottom right, #3b82f6 50%, #1f2937 50%);
-    height: 100vh;
-}
-
 .command-line-box {
-    background-color: #2d2d2d;
+    background-color: rgba(45,45,45,0.2);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
@@ -239,10 +217,6 @@ form button:hover {
     font-family: 'Courier New', Courier, monospace;
     color: #00ff00;
     font-size: 1.25rem;
-}
-
-.split-bg {
-    background-color: #f0f0f0; 
 }
 .text-white {
     color: white; 
@@ -293,4 +267,45 @@ form button:hover {
 body
 {
     font-size: 0.75;
+}
+
+.video-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.command-line-box {
+    position: relative;
+    z-index: 1; /* Ensures the command line box is above the video */
+}
+/* Add styles for the video background */
+.video-bg {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+.command-line-box {
+    position: relative;
+    z-index: 1; 
 }
