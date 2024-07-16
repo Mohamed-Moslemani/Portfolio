@@ -6,8 +6,6 @@
 
 body {
     font-family:Arial, Helvetica, sans-serif, monospace;
-    background: #e9e9e9;
-    color: #e0dada;
 }
 
 header {
@@ -15,8 +13,8 @@ header {
     left: 0;
     top: 0;
     height: 100%;
-    width: 200px;
-    background: #007acc;
+    width: 150px;
+    background: rgba(17, 24, 39, var(--tw-bg-opacity));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,12 +32,11 @@ nav ul {
     align-items: flex-start;
 }
 nav {
-    background: #667681;
+    background: #666b6d;
 }
 nav ul li {
     width: 100%;
     opacity: 0;
-    transform: translateX(-20px);
     animation: slideIn 0.3s forwards;
     animation-delay: calc(0.1s * var(--i));
 }
@@ -55,7 +52,7 @@ nav ul li a {
     width: 100%;
     padding: 10px 20px;
     display: block;
-    color: #3d3636;
+    color: #ecdede;
     text-decoration: none;
     transition: background 0.3s ease, padding-left 0.3s ease;
 }
