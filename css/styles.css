@@ -1,3 +1,4 @@
+/* styles.css */
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-    font-family:Arial, Helvetica, sans-serif, monospace;
+    font-family: Arial, Helvetica, sans-serif, monospace;
 }
 
 header {
@@ -13,14 +14,15 @@ header {
     left: 0;
     top: 0;
     height: 100%;
-    width: 150px;
-    background: rgba(17, 24, 39, var(--tw-bg-opacity));
+    width: 200px; 
+    background: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: width 0.3s ease-in-out;
     overflow: hidden;
     z-index: 1000;
+    border-radius: 15px; /* Add rounded edges */
 }
 
 nav ul {
@@ -31,9 +33,7 @@ nav ul {
     flex-direction: column;
     align-items: flex-start;
 }
-nav {
-    background: #666b6d;
-}
+
 nav ul li {
     width: 100%;
     opacity: 0;
@@ -55,6 +55,7 @@ nav ul li a {
     color: #ecdede;
     text-decoration: none;
     transition: background 0.3s ease, padding-left 0.3s ease;
+    border-radius: 10px; 
 }
 
 nav ul li a:hover {
@@ -63,9 +64,8 @@ nav ul li a:hover {
 }
 
 main {
-    margin-left: 200px;
-    padding: 20px;
-    transition: margin-left 0.3s ease;
+    margin-left: 200px; /* Initial margin-left matching nav width */
+    transition: margin-left 0.3s ease-in-out;
 }
 
 .home-content {
@@ -132,7 +132,6 @@ main {
     transform: translateY(-3px);
 }
 
-
 @keyframes formFadeIn {
     from {
         opacity: 0;
@@ -183,13 +182,11 @@ form button:hover {
     transform: translateY(-2px);
 }
 
-
 .command-line-box h1, .command-line-box h2, .command-line-box h3 {
     margin: 10px 0;
     font-family: 'Courier New', Courier, monospace;
     color: #00ff00;
 }
-
 
 .command-line-box p {
     margin: 10px 0;
@@ -197,32 +194,41 @@ form button:hover {
     color: #00ff00;
     font-size: 1.25rem;
 }
+
 .text-white {
     color: white; 
 }
+
 .rounded-lg {
     border-radius: 8px; 
 }
+
 .shadow-lg {
     box-shadow: 0 4px 6px rgba(121, 120, 120, 0.1); 
 }
+
 .command-line-box {
     max-width: 80%; 
     margin: 0 auto;
     padding-left: 300px; 
 }
+
 .font-mono {
     font-family: 'Courier New', Courier, monospace; 
 }
+
 .h-screen {
     height: 100vh; 
 }
+
 .items-center {
     align-items: center; 
 }
+
 .justify-center {
     justify-content: center; 
 }
+
 .text-left {
     text-align: left; 
 }
@@ -230,7 +236,6 @@ form button:hover {
 .command-line-box {
     position: relative;
 }
-
 
 .command-line-box .close-icon {
     position: absolute;
@@ -241,8 +246,7 @@ form button:hover {
     cursor: pointer;
 }
 
-body
-{
+body {
     font-size: 0.75;
 }
 
@@ -265,6 +269,7 @@ body
     position: relative;
     z-index: 1; 
 }
+
 .video-bg {
     position: relative;
     overflow: hidden;
@@ -284,11 +289,6 @@ body
 .command-line-box {
     position: relative;
     z-index: 1; 
-}
-
-.command-line-box {
-    position: relative;
-    z-index: 1; 
     background-color: rgba(45, 45, 45, 0.6); 
     padding: 20px;
     border-radius: 5px;
@@ -297,10 +297,8 @@ body
     color: #29a429;
 }
 
-
 main.ml-64 {
     background-image: url('../hdwallpaper.jpg'); 
     background-size: cover; 
     background-position: center; 
 }
-

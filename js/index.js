@@ -1,15 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log("DOM fully loaded and parsed");
-
     const nav = document.querySelector('nav');
+    const main = document.querySelector('main');
+
+    nav.style.width = '200px';
+    main.style.marginLeft = '200px';
+
     nav.addEventListener('mouseover', () => {
         nav.style.width = '150px';
-        document.querySelector('main').style.color = rgba(0, 0, 0, 0.5);
+        main.style.marginLeft = '150px';
     });
     nav.addEventListener('mouseout', () => {
         nav.style.width = '200px';
-        document.querySelector('main').style.marginLeft = "200px";
+        main.style.marginLeft = '200px';
     });
+
 
     const lines = [
         "Mohamed_Moslemani_Robotic_Version > print(\"Hello World\")",
