@@ -6,8 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     main.style.marginLeft = '200px';
 
     nav.addEventListener('mouseover', () => {
-        nav.style.width = '150px';
-        main.style.marginLeft = '150px';
+        nav.style.width = '200px';
     });
     nav.addEventListener('mouseout', () => {
         nav.style.width = '200px';
