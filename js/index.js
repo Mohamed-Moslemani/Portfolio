@@ -1,36 +1,49 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const nav = document.querySelector('nav');
+    const main = document.querySelector('main');
+
+    nav.style.width = '200px';
+    main.style.marginLeft = '200px';
+
+    nav.addEventListener('mouseover', () => {
+        nav.style.width = '200px';
+    });
+    nav.addEventListener('mouseout', () => {
+        nav.style.width = '200px';
+        main.style.marginLeft = '200px';
+    });
+
+
     const lines = [
-        "Initializing AI protocols...",
-        "Loading data sets...",
-        "Analyzing algorithms...",
-        "Optimizing performance...",
-        "AI integration successful.",
+        "Mohamed_Moslemani_Robotic_Version > print(\"Hello World\")",
+        "Mohamed_Moslemani_Human_Version > print(\"Stop, please, Don't kill me\")",
         "Mohamed_Moslemani_Robotic_Version > print(\"Good Bye Humans, Hello world\")"
     ];
 
-    function initiateTypingSequence(currentIndex) {
-        if (currentIndex >= lines.length) return; // Exit if all lines are processed
+    function typeSequence(currentIndex) {
+        if (currentIndex >= lines.length) return; // Stop if no more lines
 
-        const targetElementId = `line${currentIndex + 1}`;
-        const typingOptions = {
+        const lineId = `line${currentIndex + 1}`;
+        const typedOptions = {
             strings: [lines[currentIndex]],
             typeSpeed: 50,
-            showCursor: currentIndex === lines.length - 1, // Display cursor on the last line
+            showCursor: currentIndex === lines.length - 1, // Show cursor only on last line
             onComplete: () => {
-                console.log(`Line ${currentIndex + 1} typing complete.`);
-                initiateTypingSequence(currentIndex + 1); // Proceed to the next line
+                console.log(`Completed line ${currentIndex + 1}`);
+                typeSequence(currentIndex + 1); // Start next line
             }
         };
 
-        new Typed(`#${targetElementId}`, typingOptions);
+        new Typed(`#${lineId}`, typedOptions);
     }
 
-    initiateTypingSequence(0); // Start typing from the first line
+    typeSequence(0);
 
-    // Close functionality for the command line interface
-    const closeButton = document.querySelector('#close-icon');
-    closeButton.addEventListener('click', () => {
-        const commandLineInterface = closeButton.closest('.command-line-box');
-        commandLineInterface.style.display = 'none'; // Hide the command line box
+    const closeIcon = document.querySelector('#close-icon');
+    closeIcon.addEventListener('click', () => {
+        const commandLineBox = closeIcon.closest('.command-line-box');
+        commandLineBox.style.display = 'none';
+        
+        
     });
 });
