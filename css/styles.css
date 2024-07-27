@@ -298,7 +298,7 @@ body {
 }
 
 main.ml-64 {
-    background-image: url('../images/hdwallpaper.jpg'); 
+    background-image: url('../src/hdwallpaper.jpg'); 
     background-size: cover; 
     background-position: center; 
 }
