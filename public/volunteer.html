@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mohamed Moslemani's Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="icon" href="../src/logo-black.png" type="image/png">
+        <link rel="icon" href="../src/logo-black.svg" type="image/svg+xml">
+        <link rel="icon" sizes="16x16" href="../src/logo-black.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="../src/logo-black.png" type="image/png">
+    </head>
+  
+  <body class="font-sans bg-black text-white">
+        <header>
+            <nav class="fixed top-0 left-0 h-full w-64 bg-black-800 shadow-lg z-10">
+                <ul class="flex flex-col items-start mt-10 space-y-2">
+                    <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="about.html" class="text-white">About</a></li>
+                    <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="education.html" class="text-white">Education</a></li>
+                    <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="experience.html" class="text-white">Experience</a></li>
+                    <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="projects.html" class="text-white">Projects</a></li>
+                    <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="certifications.html" class="text-white">Certifications</a></li>
+                    <li class="px-4 py-2 hover:bg-gray-700 rounded transition"><a href="volunteer.html" class="text-white">Volunteer Work</a></li>
+                </ul>
+            </nav>
+        </header>
     
-</body>
+        <main class="ml-64">
+            <section id="education" class="p-8 bg-black-900 text-white">
+                <div class="max-w-4xl text-center">
+                    <h2 class="text-4xl font-bold mb-4">Volunteer work</h2>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="mb-8 bg-green-800 rounded-lg p-6 shadow-lg opacity-90">
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="text-left">
+                                <h3 class="text-2xl font-bold">I Believe in Science</h3>
+                                <p class="text-lg">Moderator of the physics and technology team</p>
+                            </div>
+                            <div class="text-right">
+                                <img src="https://www.ibelieveinsci.com/wp-content/uploads/IBIS-2021-250.png" alt="Graduation Icon" class="w-30 h-12 text-gray-400">
+                            </div>
+                        </div>
+                        <p class="text-green-400 text-left">Lead  on more than 15 members, in the largest science community and network in the arab world. </p>
+                    </div>
+    
+                    <div class="bg-green-800 rounded-lg p-6 shadow-lg opacity-90">
+                        <div class="flex justify-between items-center mb-4 ">
+                            <div class="text-left">
+                                <h3 class="text-2xl font-bold">Beirut Arab University</h3>
+                                <p class="text-lg">Captain of the astronomy club</p>
+                            </div>
+                            <div class="text-right">
+                                <img src="https://i1.rgstatic.net/ii/institution.image/AS%3A267464984727553%401440780029541_l" alt="Data Science Icon" class="w-12 h-20 text-gray-400">
+                            </div>
+                        </div>
+                        <p class="text-green-400 text-left">Aided in event planning, event management, observatory management, and other club-related tasks.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+        <script type="module" src="../js/index.js"></script>
+    </body>
 </html>

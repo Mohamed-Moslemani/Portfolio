@@ -64,7 +64,7 @@ nav ul li a:hover {
 }
 
 main {
-    margin-left: 200px; /* Initial margin-left matching nav width */
+    margin-left: 200px; 
     transition: margin-left 0.3s ease-in-out;
 }
 
