@@ -12,11 +12,9 @@
     <link rel="icon" sizes="32x32" href="../images/logo-black.png" type="image/png">
 </head>
 <body class="font-sans bg-gray-900 text-white">
-    <div class="video-bg h-screen flex items-center justify-center text-left">
-        <video autoplay muted loop id="background-video" class="absolute inset-0 w-full h-full object-cover z-0">
-            <source src="../videos/3.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <div class="gif-bg h-screen flex items-center justify-center text-left">
+        <img src="https://media.giphy.com/media/VwXcgwGIPyiiY/giphy.gif?cid=790b7611wpo4w0s416coixe5c95bctom4bnirl280gkweq4w&ep=v1_gifs_search&rid=giphy.gif&ct=g" 
+             alt="Background GIF" class="absolute inset-0 w-full h-full object-cover z-0">
         <div class="relative text-white p-6 bg-gray-800 rounded-lg shadow-lg command-line-box z-10">
             <div class="absolute top-0 right-0 p-2">
                 <img src="https://www.svgrepo.com/show/475147/cross.svg" alt="Close" class="h-6 w-6 cursor-pointer" id="close-icon">
@@ -48,8 +46,6 @@
     </header>
 
     <main class="ml-64">
-        
-
         <section id="about" class="flex items-center justify-center p-8 text-white">
             <div class="max-w-4xl text-center">
                 <p class="text-2xl mb-4">Data Scientist | Researcher | Physicist</p>
@@ -65,14 +61,14 @@
                 <div class="absolute inset-0 bg-gradient-to-r from-gray-700 via-gray-900 to-black rounded-lg -z-10 opacity-50"></div>
                 <div class="absolute inset-0 bg-gradient-to-r from-gray-700 via-gray-900 to-black rounded-lg blur-md"></div>
                 <div class="relative z-10">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <input type="text" name="first_name" placeholder="First Name" required class="w-full p-4 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-1 focus:ring-rose-950">
-                    <input type="text" name="last_name" placeholder="Last Name" required class="w-full p-4 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-1 focus:ring-rose-500">
-                </div>
-                <input type="tel" name="phone" placeholder="Phone Number" required class="w-full p-4 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-1 focus:ring-rose-500">
-                <input type="email" name="email" placeholder="Email" required class="w-full p-4 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500">
-                <textarea name="message" placeholder="Message" rows="4" required class="w-full p-4 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500"></textarea>
-                <button type="submit" class="py-4 bg-blue-800 hover:bg-blue-700 rounded-lg text-gray font-bold text-xl">Send</button>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input type="text" name="first_name" placeholder="First Name" required class="w-full p-4 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-1 focus:ring-rose-950">
+                        <input type="text" name="last_name" placeholder="Last Name" required class="w-full p-4 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-1 focus:ring-rose-500">
+                    </div>
+                    <input type="tel" name="phone" placeholder="Phone Number" required class="w-full p-4 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-1 focus:ring-rose-500">
+                    <input type="email" name="email" placeholder="Email" required class="w-full p-4 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500">
+                    <textarea name="message" placeholder="Message" rows="4" required class="w-full p-4 mb-4 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-1 focus:ring-blue-500"></textarea>
+                    <button type="submit" class="py-4 bg-blue-800 hover:bg-blue-700 rounded-lg text-gray font-bold text-xl">Send</button>
                 </div>
             </form>
             <div class="flex justify-center mt-8 space-x-4">
@@ -85,7 +81,6 @@
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
     <script type="module" src="../js/index.js"></script>
 </body>
 </html>
